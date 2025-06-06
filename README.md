@@ -1,46 +1,51 @@
-
-# Telco Customer Churn Prediction
+# 📞 Telco Customer Churn Prediction
 
 ## 📌 Project Overview
-This project focuses on predicting customer churn in the telecommunications sector using a logistic regression model. The dataset used is the **Telco Customer Churn Dataset**, which contains information about customer demographics, services, and account details.
+This project aims to predict **customer churn** in the telecommunications sector using **logistic regression**. By analyzing customer demographics, service usage patterns, and account details, the model identifies which customers are at risk of leaving.
 
 ## 🚀 Key Features
-- **Data Preprocessing**: Cleaned and transformed categorical and numerical variables for effective modeling.
-- **Exploratory Data Analysis (EDA)**: Analyzed churn trends and feature importance.
-- **Feature Engineering**: Converted categorical features into numerical representations using one-hot encoding.
-- **Machine Learning Model**: Implemented logistic regression for churn prediction.
-- **Performance Evaluation**: Assessed model performance using probability predictions and accuracy calculations.
-- **Real-Time Prediction**: Tested model predictions on new customer data.
+- 🔍 **Exploratory Data Analysis (EDA):** Identified churn patterns, visualized key metrics, and studied feature relationships.
+- 🧹 **Data Preprocessing:** Cleaned and transformed both categorical and numerical features for effective modeling.
+- 🧠 **Feature Engineering:** Applied **one-hot encoding** using `DictVectorizer` to handle categorical variables.
+- 🤖 **Machine Learning Model:** Used **Logistic Regression** with the `liblinear` solver.
+- 📊 **Model Evaluation:** Measured performance through probability scores, accuracy, and feature importance.
+- ⚡ **Real-Time Predictions:** Tested the model with new customer data to evaluate predictive capabilities.
 
 ## 📂 Dataset Information
-- **Source**: WA_Fn-UseC_-Telco-Customer-Churn.csv
-- **Target Variable**: `churn` (Binary: 1 - Churn, 0 - No Churn)
-- **Features**:
-  - Categorical: `gender`, `contract`, `internetservice`, `paymentmethod`, etc.
-  - Numerical: `tenure`, `monthlycharges`, `totalcharges`
+- **Source:** `WA_Fn-UseC_-Telco-Customer-Churn.csv`
+- **Target Variable:** `Churn` (Binary: `Yes` → 1, `No` → 0)
+
+### 🔢 Features
+- **Categorical:** `gender`, `contract`, `internetservice`, `paymentmethod`, etc.
+- **Numerical:** `tenure`, `monthlycharges`, `totalcharges`
 
 ## 🔧 Tech Stack
-- **Python** (pandas, numpy, seaborn, matplotlib, scikit-learn)
-- **Machine Learning**: Logistic Regression
-- **Feature Processing**: DictVectorizer for categorical encoding
-- **Visualization**: Seaborn & Matplotlib
+- **Language:** Python
+- **Libraries:** 
+  - `pandas`, `numpy` – Data manipulation
+  - `seaborn`, `matplotlib` – Visualization
+  - `scikit-learn` – Machine learning and preprocessing
 
 ## 📊 Model Training & Evaluation
-- **Data Splitting**: 80% Training, 20% Testing
-- **Model Used**: Logistic Regression (`liblinear` solver)
-- **Feature Selection**: Used mutual information scores
-- **Performance Metrics**:
+- **Data Split:** 80% training / 20% testing
+- **Model:** Logistic Regression (`liblinear` solver)
+- **Feature Selection:** Mutual information scores for relevance
+- **Performance Metrics:**
   - Probability predictions
-  - Accuracy evaluation
-  - Feature importance extraction
+  - Accuracy scoring
+  - Feature importance visualization
 
-📌 Future Enhancements
+## 🔮 Future Enhancements
+- 🧪 Experiment with advanced models: `Random Forest`, `XGBoost`, and `Neural Networks`
+- 🧠 Improve feature selection and transformation pipelines
+- 🌐 Deploy as an interactive web app using `Flask` or `FastAPI`
 
-Implement more advanced models (Random Forest, XGBoost, Neural Networks)
+## 🤝 Contributions
+✨ Contributions are welcome! Feel free to fork this project, enhance it, and submit a pull request.
 
-Improve feature selection and engineering
+## 📬 Contact
+📧 **Email:** kaweeshawickrama@gmail.com
 
-Deploy as a web app using Flask or FastAPI
+---
 
-✨ Contributions are welcome! Feel free to fork, enhance, and submit pull requests. 🚀
-
+> Predicting customer churn helps businesses retain valuable customers and improve service strategies. This project demonstrates how data-driven insights can guide decision-making in telecom industries.
